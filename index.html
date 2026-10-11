@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>奶蛙 MBTI 人格测试</title>
+  <meta name="description" content="30 道小题，测出你是奶蛙家族的哪一只。仅供娱乐，不是心理量表。" />
+  <link rel="icon" type="image/png" href="./bg/favicon.png" />
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+<body>
+  <!-- 页面背景图：图源由 data/config.json → display.background.image 指定，首屏即可见 -->
+  <div class="page-bg" id="page-bg" aria-hidden="true"></div>
+
+  <div id="app">
+    <!-- 首页 -->
+    <section id="page-intro" class="page active">
+      <div class="card intro-card">
+        <h1 class="intro-title" id="intro-title">你是哪只奶蛙？</h1>
+        <p class="intro-lead" id="intro-lead"></p>
+        <button id="btn-start" class="btn btn-primary" type="button">开始测试</button>
+        <p class="intro-credit" id="intro-credit"></p>
+        <p class="intro-note">结果仅供娱乐 · 不是心理量表 · 与任何心理学机构无关</p>
+      </div>
+    </section>
+
+    <!-- 答题页 -->
+    <section id="page-quiz" class="page">
+      <div class="card quiz-card">
+        <div class="progress-bar">
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+        <div class="progress-text" id="progress-text">0 / 30</div>
+        <div class="question-area">
+          <p class="question-text" id="question-text"></p>
+        </div>
+        <div class="options" id="options"></div>
+      </div>
+    </section>
+
+    <!-- 结果页 -->
+    <section id="page-result" class="page">
+      <div class="card result-card" id="result-card">
+        <div class="result-kicker" id="result-kicker"></div>
+
+        <figure class="result-figure-wrap" id="result-figure-wrap" hidden>
+          <img id="result-figure" class="result-figure" alt="" />
+          <figcaption class="result-figure-cap" id="result-figure-cap"></figcaption>
+        </figure>
+
+        <div class="result-code" id="result-code"></div>
+        <div class="result-name" id="result-name"></div>
+        <div class="result-badge" id="result-badge"></div>
+        <div class="result-quote" id="result-quote"></div>
+        <div class="result-desc" id="result-desc"></div>
+
+        <h3 class="section-title" id="dims-title">你的四个性格维度</h3>
+        <p class="section-sub" id="dims-sub"></p>
+        <div class="dims-list" id="dims-list"></div>
+
+        <div class="disclaimer" id="disclaimer"></div>
+
+        <div class="result-actions">
+          <button id="btn-download" class="btn btn-primary" type="button">保存分享图片</button>
+          <button id="btn-restart" class="btn btn-secondary" type="button">重新测试</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

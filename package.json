@@ -1,0 +1,17 @@
+{
+  "name": "naiwa-mbti-test",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "奶蛙 MBTI 人格测试 — 30 题 / 16 型奶蛙，数据驱动的静态站点",
+  "scripts": {
+    "dev": "vite",
+    "test": "node scripts/validate-data.mjs",
+    "generate:figures": "node scripts/generate-figures.mjs",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}

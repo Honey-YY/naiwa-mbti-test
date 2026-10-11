@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "name": "奶蛙 MBTI 人格测试",
+    "modelCode": "NAIWA-MBTI",
+    "version": "0.2.0",
+    "license": "MIT (forked from ktwu01/ChuangBTI)",
+    "note": "标题、署名、配色可改；文案字段集中在 display，改这里即可"
+  },
+  "scoring": {
+    "model": "mbti-4d",
+    "tieBreak": {
+      "EI": "I",
+      "SN": "N",
+      "TF": "F",
+      "JP": "P"
+    }
+  },
+  "behavior": {
+    "shuffleQuestions": false
+  },
+  "display": {
+    "title": "奶蛙 MBTI 人格测试",
+    "subtitle": "30 个小题，测出你是奶蛙家族的哪一只。",
+    "author": "",
+    "background": {
+      "image": "bg/background.jpg",
+      "note": "首屏及全站页面背景图，路径相对 public/；留空则回退纯色底。favicon 用 public/bg/favicon.png"
+    },
+    "funNote": "本测试仅供娱乐，不是心理量表，也与任何心理学机构无关。<br>奶蛙是大家喜欢的卡通伙伴，本测试只是借它讲一个关于你的小故事。",
+    "ui": {
+      "introTitleHtml": "你是哪只奶蛙？",
+      "introLead": "30 道小题，跟着第一反应选就好。答完你会得到一只属于你的奶蛙，和它的性格小档案。",
+      "resultKicker": "你的奶蛙家族人格是",
+      "typeLabel": "类型",
+      "quoteLabel": "它的口头禅",
+      "dimsTitle": "你的四个性格维度",
+      "dimsSub": "每一维都按你这次的选择算，越靠一侧说明倾向越明显。",
+      "shareWatermark": "奶蛙 MBTI 人格测试 · 仅供娱乐"
+    }
+  }
+}

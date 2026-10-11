@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.DS_Store
+*.local
+.claude/
+.gstack/
+# 原始素材库与本地中间产物（不入库）
+tmp/
+奶蛙图片/
